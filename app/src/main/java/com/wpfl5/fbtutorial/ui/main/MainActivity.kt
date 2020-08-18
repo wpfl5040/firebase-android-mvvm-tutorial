@@ -1,6 +1,5 @@
 package com.wpfl5.fbtutorial.ui.main
 
-
 import android.os.Bundle
 import com.wpfl5.fbtutorial.R
 import com.wpfl5.fbtutorial.databinding.ActivityMainBinding
