@@ -16,3 +16,9 @@ collection -------- document ----------------------------field------------------
 # Authentication
 - Go to the Firebase Authentication
 - GO to the sign-in method tab and enable email password
+
+# Storage
+- To be added
+
+# Machine Learning
+- To be added
