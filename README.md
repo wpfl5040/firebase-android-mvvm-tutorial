@@ -11,7 +11,9 @@ Firebase exercise project that integrates Kotlin Coroutines, Koin, Room, Navigat
 
 collection -------- document ----------------------------field----------------------------
   users              autoId            name(String), email(String), created(Timestamp)
-  
+  	users------autoId---------name(String)
+                     L--------email(String)
+                     L--------created(Timestamp)
   
 # Authentication
 - Go to the Firebase Authentication
