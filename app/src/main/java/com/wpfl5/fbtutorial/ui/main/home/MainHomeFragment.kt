@@ -21,6 +21,10 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainViewModel>(){
         binding.apply {
             mainViewModel = viewModel
 
+            btnAuth.setOnClickListener {
+                findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainAuthFragment())
+            }
+
             btnFireStore.setOnClickListener {
                 findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainFirestoreFragment())
             }

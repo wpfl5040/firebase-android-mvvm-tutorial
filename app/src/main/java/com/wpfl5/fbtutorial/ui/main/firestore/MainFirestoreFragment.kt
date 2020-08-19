@@ -1,9 +1,7 @@
 package com.wpfl5.fbtutorial.ui.main.firestore
 
 import android.os.Bundle
-import android.view.MenuInflater
 import android.view.View
-import android.widget.PopupMenu
 import androidx.lifecycle.Observer
 import com.wpfl5.fbtutorial.R
 import com.wpfl5.fbtutorial.databinding.FragmentMainFirestoreBinding

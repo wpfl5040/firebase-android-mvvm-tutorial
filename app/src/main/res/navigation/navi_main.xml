@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_mainFirestoreFragment"
             app:destination="@id/mainFirestoreFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mainAuthFragment"
+            app:destination="@id/mainAuthFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFirestoreFragment"
         android:name="com.wpfl5.fbtutorial.ui.main.firestore.MainFirestoreFragment"
         android:label="MainFirestoreFragment"
         tools:layout="@layout/fragment_main_firestore"/>
+    <fragment
+        android:id="@+id/mainAuthFragment"
+        android:name="com.wpfl5.fbtutorial.ui.main.auth.MainAuthFragment"
+        android:label="MainAuthFragment"
+        tools:layout="@layout/fragment_main_auth"/>
 </navigation>

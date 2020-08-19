@@ -3,7 +3,6 @@ package com.wpfl5.fbtutorial.ui.main.firestore
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import androidx.lifecycle.map
 import com.wpfl5.fbtutorial.model.FbResponse
 import com.wpfl5.fbtutorial.model.User
 import com.wpfl5.fbtutorial.usecase.StoreUseCase

@@ -7,4 +7,14 @@
     <string name="btn_text_firestore">fireStore_recyclerview</string>
     <string name="firestore_test">FireStore Test</string>
     <string name="add">ADD</string>
+    <string name="authentication">Authentication</string>
+
+    <string name="success">Success</string>
+    <string name="register_button">register Button</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="authentication_test">Authentication_Test</string>
+    <string name="login_button">Login Button</string>
+    <string name="success_resetPwd">Password change sent by email</string>
+    <string name="reset_password_button">reset password Button</string>
 </resources>
