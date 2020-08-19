@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_mainAuthFragment"
             app:destination="@id/mainAuthFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mainCrashlyticsFragment"
+            app:destination="@id/mainCrashlyticsFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFirestoreFragment"
@@ -27,4 +30,9 @@
         android:name="com.wpfl5.fbtutorial.ui.main.auth.MainAuthFragment"
         android:label="MainAuthFragment"
         tools:layout="@layout/fragment_main_auth"/>
+    <fragment
+        android:id="@+id/mainCrashlyticsFragment"
+        android:name="com.wpfl5.fbtutorial.ui.main.crashlytics.MainCrashlyticsFragment"
+        android:label="MainCrashlyticsFragment"
+        tools:layout="@layout/fragment_main_crashlytics"/>
 </navigation>
