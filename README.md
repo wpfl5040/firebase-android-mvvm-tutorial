@@ -9,12 +9,10 @@ Firebase exercise project that integrates Kotlin Coroutines, Koin, Room, Navigat
 - Modify the rule to allow read and write
 - Create users collection
 
-collection -------- document ----------------------------field----------------------------                                                                          
-  users              autoId            name(String), email(String), created(Timestamp)                                                                              
-  	users------autoId---------name(String)
-                     L--------email(String)
-                     L--------created(Timestamp)
-  
+```
+ collection -------- document ----------------------------field----------------------------                                                                         
+   users              autoId          name(String), email(String), created(Timestamp)                                                                           
+```
 # Authentication
 - Go to the Firebase Authentication
 - GO to the sign-in method tab and enable email password
