@@ -17,6 +17,10 @@ collection -------- document ----------------------------field------------------
 - Go to the Firebase Authentication
 - GO to the sign-in method tab and enable email password
 
+# Crashlytics
+- When the testcrash button is pressed in the app, a runtime exception is raised
+- Go to the crash tab of the Firebase homepage and check
+
 # Storage
 - To be added
 
