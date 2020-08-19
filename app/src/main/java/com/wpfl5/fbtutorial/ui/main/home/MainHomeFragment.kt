@@ -1,10 +1,7 @@
 package com.wpfl5.fbtutorial.ui.main.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.wpfl5.fbtutorial.R
 import com.wpfl5.fbtutorial.databinding.FragmentMainHomeBinding
@@ -29,6 +26,10 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainViewModel>(){
                 findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainFirestoreFragment())
             }
 
+            btnCrash.setOnClickListener {
+                findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainCrashlyticsFragment())
+            }
+            
         }
     }
 
