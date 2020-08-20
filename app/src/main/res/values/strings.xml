@@ -20,4 +20,6 @@
     <string name="test_crash">test_crash</string>
     <string name="crashlytics">Crashlytics</string>
     <string name="set_custom_key">set custom key</string>
+    <string name="storage">storage</string>
+    <string name="download">download</string>
 </resources>

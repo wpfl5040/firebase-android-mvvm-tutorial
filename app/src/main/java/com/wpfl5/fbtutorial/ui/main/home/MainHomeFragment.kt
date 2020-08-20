@@ -29,7 +29,10 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainViewModel>(){
             btnCrash.setOnClickListener {
                 findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainCrashlyticsFragment())
             }
-            
+
+            btnStorage.setOnClickListener {
+                findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainStorageFragment())
+            }
         }
     }
 

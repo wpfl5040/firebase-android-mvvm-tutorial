@@ -4,18 +4,14 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.wpfl5.fbtutorial.repository.AuthRepository
-import com.wpfl5.fbtutorial.repository.AuthRepositoryImpl
-import com.wpfl5.fbtutorial.repository.StoreRepository
-import com.wpfl5.fbtutorial.repository.StoreRepositoryImpl
+import com.google.firebase.storage.ktx.storage
+import com.wpfl5.fbtutorial.repository.*
 import com.wpfl5.fbtutorial.ui.main.MainViewModel
 import com.wpfl5.fbtutorial.ui.main.auth.AuthViewModel
 import com.wpfl5.fbtutorial.ui.main.crashlytics.CrashlyticsViewModel
 import com.wpfl5.fbtutorial.ui.main.firestore.FireStoreViewModel
-import com.wpfl5.fbtutorial.usecase.AuthUseCase
-import com.wpfl5.fbtutorial.usecase.AuthUseCaseImpl
-import com.wpfl5.fbtutorial.usecase.StoreUseCase
-import com.wpfl5.fbtutorial.usecase.StoreUseCaseImpl
+import com.wpfl5.fbtutorial.ui.main.storage.StorageViewModel
+import com.wpfl5.fbtutorial.usecase.*
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.module.Module
 import org.koin.dsl.bind
@@ -30,17 +26,21 @@ val viewModelModule = module {
     viewModel { FireStoreViewModel(get()) }
     viewModel { AuthViewModel(get()) }
     viewModel { CrashlyticsViewModel(get()) }
+    viewModel { StorageViewModel(get()) }
 }
 
 val repoModule = module {
     single { Firebase.firestore }
     single { Firebase.auth }
     single { FirebaseCrashlytics.getInstance() }
+    single { Firebase.storage }
     factory<StoreRepositoryImpl>() bind StoreRepository::class
     factory<AuthRepositoryImpl>() bind AuthRepository::class
+    factory<StorageRepositoryImpl>() bind StorageRepository::class
 }
 
 val useCaseModule = module {
     factory<StoreUseCaseImpl>() bind StoreUseCase::class
     factory<AuthUseCaseImpl>() bind AuthUseCase::class
+    factory<StorageUseCaseImpl>() bind StorageUseCase::class
 }

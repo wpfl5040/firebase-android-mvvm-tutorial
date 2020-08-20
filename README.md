@@ -22,6 +22,17 @@ Firebase exercise project that integrates Kotlin Coroutines, Koin, Room, Navigat
 - Go to the crash tab of the Firebase homepage and check
 
 # Storage
+- GO to the Firebase Storage
+- Modify the rule to allow read and write
+- Go to the StorageRepositoryImpl class and modify the path accordingly
+```
+    //TODO : Please modify the path appropriately
+    val storageRef = storage.getReferenceFromUrl("Enter your url")
+    //TODO : Please modify the path appropriately
+    val listRef = storage.reference.child("Enter your folder")
+```
+
+# Analytics
 - To be added
 
 # Machine Learning

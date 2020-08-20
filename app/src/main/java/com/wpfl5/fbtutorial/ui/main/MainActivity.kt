@@ -16,4 +16,5 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
             mainViewModel = viewModel
         }
     }
+
 }

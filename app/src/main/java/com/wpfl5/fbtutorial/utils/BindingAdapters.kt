@@ -2,11 +2,12 @@ package com.wpfl5.fbtutorial.utils
 
 
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.Timestamp
-import com.wpfl5.fbtutorial.ui.base.BaseAdapter
+import com.google.firebase.storage.StorageReference
+import com.wpfl5.fbtutorial.di.GlideApp
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -32,8 +33,13 @@ object BindingAdapters {
         }
     }
 
-
-
+    @BindingAdapter("fbImageWithUi")
+    @JvmStatic
+    fun fbImageWithUi(view: ImageView, path: StorageReference){
+        GlideApp.with(view.context)
+            .load(path)
+            .into(view)
+    }
 
 
 }

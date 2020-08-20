@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.MainActivity">
+
+    <data>
+        <variable
+            name="storage"
+            type="com.wpfl5.fbtutorial.model.StorageResponse" />
+
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="2dp"
+            app:contentPadding="10dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/img"
+                    fbImageWithUi="@{storage.ref}"
+                    tools:src="@mipmap/ic_launcher"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:id="@+id/cardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_toStartOf="@+id/img_menu"
+                    android:layout_toEndOf="@+id/img"
+                    android:text="@{storage.name}"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="name" />
+
+                <TextView
+                    android:id="@+id/cardSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardTitle"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toStartOf="@+id/img_menu"
+                    android:layout_toEndOf="@+id/img"
+                    android:text="@{storage.path}"
+                    android:textStyle="italic"
+                    tools:text="path" />
+
+                <ImageButton
+                    android:id="@+id/img_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/cardTitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:text="@{storage.name}"-->
+<!--                    tools:text="name"-->
+<!--                    android:layout_alignParentTop="true" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/cardSubTitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:text="@{storage.path}"-->
+<!--                    tools:text="path"-->
+<!--                    android:layout_below="@+id/cardTitle"/>-->
+
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/img_menu"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="?android:attr/selectableItemBackground"-->
+<!--                    android:src="@drawable/ic_more_vert_black_24dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    tools:ignore="ContentDescription" />-->
+
+<!--            </RelativeLayout>-->
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</layout>
