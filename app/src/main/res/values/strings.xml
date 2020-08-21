@@ -22,4 +22,8 @@
     <string name="set_custom_key">set custom key</string>
     <string name="storage">storage</string>
     <string name="download">download</string>
+    <string name="analytics">analytics</string>
+    <string name="select_event">select Event()</string>
+    <string name="customevent">customEvent</string>
+    <string name="set_custom_event">set Custom Event</string>
 </resources>

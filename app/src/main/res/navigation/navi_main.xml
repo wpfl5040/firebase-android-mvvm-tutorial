@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_mainStorageFragment"
             app:destination="@id/mainStorageFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mainAnalyticsFragment"
+            app:destination="@id/mainAnalyticsFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFirestoreFragment"
@@ -43,4 +46,9 @@
         android:name="com.wpfl5.fbtutorial.ui.main.storage.MainStorageFragment"
         android:label="MainStorageFragment"
         tools:layout="@layout/fragment_main_storage"/>
+    <fragment
+        android:id="@+id/mainAnalyticsFragment"
+        android:name="com.wpfl5.fbtutorial.ui.main.analytics.MainAnalyticsFragment"
+        android:label="MainAnalyticsFragment"
+        tools:layout="@layout/fragment_main_analytics"/>
 </navigation>

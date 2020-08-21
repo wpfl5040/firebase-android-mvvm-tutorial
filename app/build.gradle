@@ -45,9 +45,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    //firebase - analytics
+    //firebase
     implementation 'com.google.firebase:firebase-core:17.5.0'
+    //firebase - analytics
     implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.4.4'
     //firebase - firestore
     implementation 'com.google.firebase:firebase-firestore:21.5.0'
     implementation 'com.google.firebase:firebase-firestore-ktx:21.5.0'

@@ -25,8 +25,7 @@ class StorageRepositoryImpl : StorageRepository, KoinComponent {
     override suspend fun saveImgFile(filePath: Uri): Flow<FbResponse<Boolean>> = callbackFlow {
 
         //TODO : Please modify the path Url
-        val storageRef = storage.getReferenceFromUrl("Enter your url")
-
+        val storageRef = storage.getReferenceFromUrl("gs://fbtutorial-ffcee.appspot.com")
 
         //파일이름
         val fileName =
@@ -50,7 +49,7 @@ class StorageRepositoryImpl : StorageRepository, KoinComponent {
     override suspend fun getStorageList(): Flow<FbResponse<List<StorageResponse>>> = callbackFlow {
 
         //TODO : Please modify the path appropriately
-        val listRef = storage.reference.child("Enter your folder")
+        val listRef = storage.reference.child("imageFolder")
 
         listRef.listAll()
             .addOnSuccessListener { listResult ->

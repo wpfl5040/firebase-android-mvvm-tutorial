@@ -33,6 +33,11 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainViewModel>(){
             btnStorage.setOnClickListener {
                 findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainStorageFragment())
             }
+
+            btnAnalytics.setOnClickListener {
+                findNavController().navigate(MainHomeFragmentDirections.actionMainHomeFragmentToMainAnalyticsFragment())
+            }
+
         }
     }
 

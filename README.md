@@ -33,7 +33,14 @@ Firebase exercise project that integrates Kotlin Coroutines, Koin, Room, Navigat
 ```
 
 # Analytics
-- To be added
+- Analytics event settings.
+- Check the event name in the FirebaseAnalytics.Event. class
+- How to register customEvent
+```
+     fun customEvent(eventName: String) {
+         analytics.logEvent(eventName, Bundle())
+     }
+```
 
 # Machine Learning
 - To be added
